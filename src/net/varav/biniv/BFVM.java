@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
-public class BIVM {
+public class BFVM {
 
 	private final Stack<Integer> callStack = new Stack<Integer>();
 
@@ -23,7 +23,7 @@ public class BIVM {
 		public void execute();
 	}
 
-	public BIVM(String data) {
+	public BFVM(String data) {
 		memory = new char[32768];
 
 		instructionSet.put('+', () -> this.memory[this.pointer]++);
